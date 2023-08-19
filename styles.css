@@ -155,7 +155,11 @@ a:active {
     text-decoration: none;
     font-size: 22px;
     font-weight: 600;
-    margin-left: 20px ;
+    margin-left: 20px;
+}
+
+#contact {
+    padding: 10px 0 20px 0;
 }
 
 #about {
@@ -173,27 +177,32 @@ a:active {
     text-decoration: underline;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
 @media screen and (max-width: 415px)
 {
-
-    .hamburger {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-    }
-
     .navbar {
-        display: block;
+        display: inline-block;
         /* border: 1px solid red; */
         margin: 15px 0 0 15px;
         width: 80%;
         max-width: 1000px;
     }
     h1 {
-        font-size: 24px;
+        font-size: 18px;
         /* margin: -10px 0px 0px -15px; */
         /* border: 1px solid olive; */
     }
@@ -209,13 +218,13 @@ a:active {
     }
 
     .links li {
-        display: block;
+        display: inline-block;
         margin-left: 10px;
     }
 
     .links a {
         margin: 5px;
-        font-size: 20px;
+        font-size: 13px;
     }
 
     .links li a:first-of-type {
@@ -223,7 +232,7 @@ a:active {
     } 
 
     .gradient.h1 {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     #intro {
@@ -289,7 +298,6 @@ a:active {
     #about {
         max-width: 800px;
         margin-left: 0px;
-        padding-bottom: 50px;
     }
 
     #about .about-heading {
