@@ -1,5 +1,19 @@
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    -o-filter: blur(5px);
+    filter: blur(5px);
+    transform: scale(1.04);
+  }
 body {
-    background-color: rgba(252, 239, 210, 0.789) ;
+    background-color: rgb(252, 239, 211) ;
     font-family: "Cormorant Garamond", serif;
 }
 
@@ -7,8 +21,42 @@ html {
     scroll-behavior: smooth;
 }
 
+.welcome h1 {
+    color: rgb(255, 255, 255);
+    margin-top: 15rem;
+    font-size: 78px;
+    font-family: cormorant;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: 0.5s ease;
+    padding: 50px;
+}
+
+.welcome a {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s ease;
+}
+
+.welcome a:hover {
+    color: hsl(25, 100%, 79%);
+    transform: scale(0.2);
+}
+
+.welcome h1:hover {
+    transform: scale(1.1);
+    color: #000000;
+    border: 1px solid;
+    border-radius: 20% 30%;
+    background-color: #75757553;
+}
+
 .topnav {
     display: none;
+}
+
+.navbar.nav-menu {
+    margin-top: -0.01px;
 }
 
 .gradient {
@@ -29,11 +77,26 @@ html {
     max-width: 800px;
     text-align: center;
     margin: auto;
+
+}
+
+#pizza-info {
+    min-width: 300px;
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+}
+
+.pz-name {
+    text-transform: uppercase;
+    font-weight: bold;
+    ;
 }
 
 #intro h2 {
     font-size: 48px;
     font-weight: 600;
+    color: #000000;
 }
 
 .gp {
@@ -41,14 +104,28 @@ html {
     text-decoration: underline;
 }
 
+#intro h2.order {
+    text-decoration: none;
+    font-weight: 900;
+    transition: 0.4s ease-in-out;
+    color: rgb(0, 0, 0);
+}
+
+#intro h2.order:hover {
+    color: #ff8437;
+    text-decoration: none;
+}
+
 #intro p {
-    font-size: 22px;
+    font-size: 26px;
+    color: #000000;
 }
 
 #intro a {
     text-decoration: none;
     font-weight: 900;
     transition: 0.3s ease-in-out;
+    color: rgb(0, 0, 0);
 }
 
 #intro a:hover {
@@ -60,6 +137,7 @@ h1 {
     display: inline-block;
     font-weight: 200;
     margin: 0;
+    color: #000000;
 }
 
 .links {
@@ -90,12 +168,31 @@ h1 {
     color: #af4261;
 }
 
+.clasa {
+    margin-left: -30px;
+}
+
+.clasa, .prof {
+    margin-top: 16px;
+}
+
+.work {
+    margin-top: 116px !important;
+}
+
 a:active {
     text-decoration: underline;
 }
 
 .navbar {
     margin: 32px;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar h2 {
+    color: rgb(0, 0, 0);
+    max-width: 500px;
 }
 
 .card {
@@ -104,6 +201,44 @@ a:active {
     display: inline-block;
     box-sizing: border-box ;
     padding: 20px;
+    transition: 0.7s ease;
+}
+
+.card-order {
+    border: 2.5px solid rgb(0, 0, 0);
+    /* width: 50%; */
+    max-width: 600px;
+    display: inline-block;
+    box-sizing: border-box ;
+    transition: 0.7s ease;
+    border-radius: 50% 20%;
+}
+#intro .order-h2-div {
+    display: list-item;
+    display: flex;
+    gap: 30px;
+}
+
+#intro .order-h2 {
+    color: #000000;
+    font-size: 34px;
+    margin-top: 10px;
+    font-weight: 100;
+    transition: 0.8s ease;
+    max-width: 400px;
+}
+
+#intro .order-h2:hover {
+    color: #ff6822;
+    font-size: 34px;
+    margin-top: 10px;
+    font-weight: 900;
+    transition: 0.8s ease;
+}
+
+.card:hover {
+    transform: scale(0.9);
+    transition: 0.5s ease;
 }
 
 .card img {
@@ -111,8 +246,13 @@ a:active {
     max-width: 100%;
     min-width: 500px;
     object-fit: cover;
+    transition: 0.7s ease;
 }
 
+.card img:hover {
+    opacity: 60%;
+    transition: 0.5s ease;
+}
 
 .impar img {
     border-radius: 0px 30px;
@@ -128,13 +268,21 @@ a:active {
 }
 
 .par h2 {
+    color: #000000;
     padding-right: 30px;
 }
 
 .card h2 {
+    color: #000000;
     display: inline-block;
     margin-top: 2px;
     font-weight: 900;
+    transition: 0.8s ease;
+}
+
+.card:hover h2 {
+    transition: 0.7s ease;
+    color: rgb(255, 132, 32);
 }
 
 .img-grid {
@@ -148,6 +296,19 @@ a:active {
     font-weight: 500;
     line-height: 35px;
     letter-spacing: 0.5px;
+    color: #000000;
+}
+
+
+#intro .comanda {
+    font-size: 38px;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid;
+    border-radius: 30px 30px;
+}
+
+#intro a.comanda {
+    text-decoration: none;
 }
 
 #about h3.come {
@@ -156,6 +317,7 @@ a:active {
 }
 
 #contact a{
+    color: #000000;
     text-decoration: none;
     font-size: 22px;
     font-weight: 600;
@@ -171,7 +333,7 @@ a:active {
     max-width: 800px;
     margin: 88px 0px 10px 128px; 
     padding-left: 25px;
-    border-left: 2px solid black;
+    border-left: 2px solid rgb(0, 0, 0);
 }
 
 .about-heading {
@@ -193,7 +355,7 @@ a:active {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 415px)
@@ -262,6 +424,9 @@ a:active {
         line-height: 18px;
     }
 
+    .img-grid {
+        border: 1px solid black;
+    }
     .navbar {
         max-width: 800px;
     }
@@ -281,12 +446,21 @@ a:active {
         /* border: 1px solid rgb(133, 28, 125); */
     }
 
+
     .card {
-        /* border: 1px solid blue; */
+        border: 1px solid blue;
         width: 45.75%;
         display: inline-block;
         box-sizing: border-box ;
         padding: 5px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .card:hover {
+        width: 5px;
+        height: 50px;
+        transition: all 200ms linear;
     }
 
     .card h2 {
@@ -331,3 +505,14 @@ a:active {
         margin: 0;
     }
 }
+
+
+.pizza-list {
+    gap: 90px;
+    display: inline-flex;
+}
+
+#no-background {
+    background-image: none;
+}
+
